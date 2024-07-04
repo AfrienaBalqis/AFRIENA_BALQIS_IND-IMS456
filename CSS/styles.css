@@ -1,0 +1,529 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background-color: pink;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    background-color: pink;
+    
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 80%;
+    height: auto;
+}
+
+/* Picture and description layout */
+.picture-description {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.picture {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    flex: 2;
+}
+
+.description h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .picture-description {
+        flex-direction: column;
+    }
+
+    .picture {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+header {
+    background-color: pink;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* Timeline layout */
+.timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: pink;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-event:nth-child(even) .timeline-content {
+    flex-direction: row-reverse;
+}
+
+.timeline-event:nth-child(even) .timeline-content .picture {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.timeline-event:nth-child(even) .timeline-content .description {
+    text-align: left;
+}
+
+.timeline-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    position: relative;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-left: 50%;
+}
+
+.timeline-content .picture {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.timeline-content .picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.timeline-content .description {
+    flex: 2;
+}
+
+.timeline-content .description h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-event:nth-child(even) .timeline-content {
+        flex-direction: column;
+    }
+
+    .timeline-content .picture {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: pink;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Skills and languages layout */
+.skills, .languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill, .language {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 48%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.skill .icon, .language .icon {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.skill .icon img, .language .icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.skill .description, .language .description {
+    flex: 2;
+}
+
+.skill .description h3, .language .description h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .skill, .language {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill .icon, .language .icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: pink;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Contact Info Layout */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-details, .contact-form {
+    width: 48%;
+    background: rgb(241, 161, 155);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.contact-details h3, .contact-form h3 {
+    margin-top: 0;
+}
+
+.contact-details p, .contact-form label {
+    margin: 10px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: plum;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+/* Social Media Buttons */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-button.facebook {
+    background-color: #3b5998;
+}
+
+.social-button.instagram {
+    background-color: #e417b0;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .contact-details, .contact-form {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
